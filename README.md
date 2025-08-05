@@ -97,3 +97,4 @@ This setup provides the foundation for the weather prediction system. The next t
 - Internet connection for API access
 - ~100MB disk space for data storage
 - API keys for weather services (free tiers available)
+- A lot of RAM
