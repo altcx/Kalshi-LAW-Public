@@ -1,0 +1,1 @@
+"""Backtesting framework for the Kalshi Weather Predictor."""

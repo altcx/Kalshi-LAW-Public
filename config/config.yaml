@@ -1,0 +1,78 @@
+# Kalshi Weather Predictor Configuration
+
+# Data Collection Settings
+data_collection:
+  # Data storage paths
+  data_dir: "data"
+  
+  # API rate limiting (calls per day)
+  rate_limits:
+    openweathermap: 1000
+    tomorrow_io: 1000
+    weatherbit: 500
+    visual_crossing: 1000
+    nws: unlimited  # No rate limit for NWS
+  
+  # Data collection schedule (hours in 24h format)
+  collection_schedule:
+    morning_forecast: 6  # 6 AM PT
+    evening_actual: 20   # 8 PM PT
+  
+  # Data quality thresholds
+  quality_thresholds:
+    min_sources_required: 2
+    max_temperature_deviation: 15.0  # degrees F
+    min_data_quality_score: 0.7
+
+# Location Settings
+location:
+  city: "Los Angeles"
+  state: "CA"
+  latitude: 34.0522
+  longitude: -118.2437
+  timezone: "America/Los_Angeles"
+  # LAX airport station for actual temperature data
+  noaa_station_id: "KLAX"
+
+# Model Settings
+models:
+  # Ensemble model weights (will be updated dynamically)
+  ensemble_weights:
+    xgboost: 0.4
+    lightgbm: 0.3
+    linear_regression: 0.2
+    prophet: 0.1
+  
+  # Model retraining frequency
+  retrain_frequency_days: 7
+  
+  # Performance thresholds
+  min_accuracy_threshold: 0.70
+  confidence_calibration_window: 30  # days
+
+# Trading Settings
+trading:
+  # Risk management
+  max_position_size: 0.05  # 5% of bankroll per trade
+  min_confidence_threshold: 0.60
+  strong_confidence_threshold: 0.80
+  
+  # Kalshi contract settings
+  contract_types:
+    - "LA_HIGH_TEMP_ABOVE_85F"
+    - "LA_HIGH_TEMP_ABOVE_90F"
+    - "LA_HIGH_TEMP_ABOVE_95F"
+    - "LA_HIGH_TEMP_BELOW_70F"
+    - "LA_HIGH_TEMP_BELOW_75F"
+
+# Logging Settings
+logging:
+  level: "INFO"
+  log_file: "logs/weather_predictor.log"
+  max_file_size: "10MB"
+  backup_count: 5
+
+# Dashboard Settings
+dashboard:
+  refresh_interval: 300  # seconds
+  historical_days_display: 30

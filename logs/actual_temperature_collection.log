@@ -1,0 +1,51 @@
+2025-07-28 16:38:27 | INFO | Testing actual temperature collection system
+2025-07-28 16:38:27 | INFO | NOAA Observations: Initialized for station KLAX
+2025-07-28 16:38:27 | INFO | DataManager initialized with data directory: data
+2025-07-28 16:38:27 | INFO | ActualTemperatureCollector initialized
+2025-07-28 16:38:27 | INFO | Testing actual temperature collection system
+2025-07-28 16:38:27 | INFO | NOAA Observations: Station info - Los Angeles, Los Angeles International Airport at elevation 38.1m
+2025-07-28 16:38:27 | INFO | NOAA Observations: Connection test successful for station KLAX
+2025-07-28 16:38:27 | INFO | NOAA Observations: Station info - Los Angeles, Los Angeles International Airport at elevation 38.1m
+2025-07-28 16:38:27 | INFO | NOAA Observations: Retrieved 16 observations from 2025-07-27 to 2025-07-28
+2025-07-28 16:38:27 | INFO | NOAA Observations: Daily high for 2025-07-27: 71.1°F
+2025-07-28 16:38:27 | INFO | Test temperature collection successful: 71.1°F for 2025-07-27
+2025-07-28 16:38:28 | INFO | Appended 1 records to actual_temperatures (total: 3)
+2025-07-28 16:38:28 | INFO | Stored actual temperature for 2025-07-26: 75.0°F (source: TEST)
+2025-07-28 16:38:28 | WARNING | No prediction found for 2025-07-26 to update
+2025-07-28 16:38:28 | INFO | Loaded 3 records from actual_temperatures
+2025-07-28 16:38:28 | INFO | Actual temperature collection system test completed successfully
+2025-07-28 16:38:28 | INFO | ✓ System test passed
+2025-07-28 16:38:46 | INFO | Collecting actual temperature for 2025-07-27
+2025-07-28 16:38:46 | INFO | NOAA Observations: Initialized for station KLAX
+2025-07-28 16:38:46 | INFO | DataManager initialized with data directory: data
+2025-07-28 16:38:46 | INFO | ActualTemperatureCollector initialized
+2025-07-28 16:38:46 | INFO | Loaded 3 records from actual_temperatures
+2025-07-28 16:38:46 | INFO | Actual temperature for 2025-07-27 already exists: 71.1°F
+2025-07-28 16:38:46 | INFO | ✓ Successfully collected temperature: 71.1°F
+2025-07-28 16:41:32 | INFO | Checking collection status for the last 7 days
+2025-07-28 16:41:32 | INFO | NOAA Observations: Initialized for station KLAX
+2025-07-28 16:41:32 | INFO | DataManager initialized with data directory: data
+2025-07-28 16:41:32 | INFO | ActualTemperatureCollector initialized
+2025-07-28 16:41:32 | INFO | Loaded 3 records from actual_temperatures
+2025-07-28 16:41:32 | INFO | Collection Status:
+2025-07-28 16:41:32 | INFO |   Period: 7 days
+2025-07-28 16:41:32 | INFO |   Collected: 3/7 (42.9%)
+2025-07-28 16:41:32 | INFO |   Latest: 2025-07-27
+2025-07-28 16:41:32 | INFO |   Missing: 2025-07-21, 2025-07-22, 2025-07-23, 2025-07-24
+2025-07-28 16:45:10 | INFO | === Daily Actual Temperature Collection ===
+2025-07-28 16:45:10 | INFO | Starting daily actual temperature collection for 2025-07-27
+2025-07-28 16:45:10 | INFO | NOAA Observations: Initialized for station KLAX
+2025-07-28 16:45:10 | INFO | DataManager initialized with data directory: data
+2025-07-28 16:45:10 | INFO | ActualTemperatureCollector initialized
+2025-07-28 16:45:10 | INFO | Loaded 3 records from actual_temperatures
+2025-07-28 16:45:10 | INFO | Actual temperature for 2025-07-27 already exists: 71.1°F
+2025-07-28 16:45:10 | INFO | ✓ Successfully collected actual temperature: 71.1°F for 2025-07-27
+2025-07-28 16:45:10 | INFO | NOAA Observations: Initialized for station KLAX
+2025-07-28 16:45:10 | INFO | DataManager initialized with data directory: data
+2025-07-28 16:45:10 | INFO | ActualTemperatureCollector initialized
+2025-07-28 16:45:10 | INFO | Loaded 3 records from actual_temperatures
+2025-07-28 16:45:10 | INFO | Collection health check: 3/7 collected (42.9%)
+2025-07-28 16:45:10 | WARNING | ⚠️  Low collection rate: 42.9% (missing 4 days)
+2025-07-28 16:45:10 | WARNING | Missing dates: 2025-07-21, 2025-07-22, 2025-07-23, 2025-07-24
+2025-07-28 16:45:10 | INFO | Loaded 3 records from actual_temperatures
+2025-07-28 16:45:10 | WARNING | ⚠️  Daily collection completed but health check shows issues

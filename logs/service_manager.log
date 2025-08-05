@@ -1,0 +1,37 @@
+2025-08-05 14:51:03 | INFO | Running task once: health
+2025-08-05 14:51:05 | INFO | Task 'health' completed successfully
+2025-08-05 14:51:05 | INFO | Output: 14:51:05 | INFO | Daily scheduler initialized
+14:51:05 | INFO | Running task once: health
+14:51:05 | INFO | === Performing System Health Check ===
+14:51:05 | INFO | Testing nws connection...
+14:51:05 | INFO | NWS: Successfully fetched 7 forecast records
+14:51:05 | INFO | nws: Connection test PASSED
+14:51:05 | INFO | API Health: 1/1 APIs responding
+14:51:05 | INFO | Loaded 151 records from nws
+14:51:05 | INFO | nws quality: 0.885
+14:51:05 | INFO | Loaded 151 records from openweather
+14:51:05 | INFO | openweather quality: 0.878
+14:51:05 | INFO | Loaded 151 records from tomorrow
+14:51:05 | INFO | tomorrow quality: 0.873
+14:51:05 | INFO | Loaded 151 records from weatherbit
+14:51:05 | INFO | weatherbit quality: 0.866
+14:51:05 | INFO | Loaded 151 records from visual_crossing
+14:51:05 | INFO | visual_crossing quality: 0.883
+14:51:05 | INFO | Loaded 7 records from actual_temperatures
+14:51:05 | INFO | Temperature collection rate: 100.0%
+14:51:05 | INFO | Overall system health: healthy
+
+2025-08-05 14:51:05 | INFO | DataManager initialized with data directory: data
+2025-08-05 14:51:05 | INFO | NWS: Grid info - Office: LOX, X: 148, Y: 41
+2025-08-05 14:51:05 | INFO | Enabled nws client
+2025-08-05 14:51:05 | WARNING | No API key found for openweather
+2025-08-05 14:51:05 | WARNING | Could not enable openweather client
+2025-08-05 14:51:05 | WARNING | No API key found for tomorrow
+2025-08-05 14:51:05 | WARNING | Could not enable tomorrow client
+2025-08-05 14:51:05 | WARNING | No API key found for weatherbit
+2025-08-05 14:51:05 | WARNING | Could not enable weatherbit client
+2025-08-05 14:51:05 | WARNING | No API key found for visual_crossing
+2025-08-05 14:51:05 | WARNING | Could not enable visual_crossing client
+2025-08-05 14:51:05 | INFO | NOAA Observations: Initialized for station KLAX
+2025-08-05 14:51:05 | INFO | DataManager initialized with data directory: data
+2025-08-05 14:51:05 | INFO | ActualTemperatureCollector initialized
