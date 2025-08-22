@@ -1,7 +1,5 @@
 # Kalshi Weather Predictor
 
-Public not fully implemented btw
-
 A machine learning-powered system for predicting daily high temperatures in Los Angeles to inform Kalshi weather futures trading decisions.
 
 ## Project Structure 
